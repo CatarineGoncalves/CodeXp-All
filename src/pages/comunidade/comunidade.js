@@ -1,24 +1,25 @@
 //importando as configurações de estilo
 import React, { Component } from 'react';
 
-import './funcionario.css'
+import './comunidade.css'
 
 
 //componetizando
-class funcionarioperfil extends Component {
+class comunidadeperfil extends Component {
     render() {
         return (
 
             <div>
-                <main className="main-funcionarioperfil">
+                <main className="main-editeseuperfil">
                     <div class="cont">
                         <div class="second-column">
 
 
                             <h2 class="title title-second"> Seu perfil</h2>
                             <img className="foto_de_perfil" src={require("../../assets/img/foto_de_perfil_tw.jpg")} alt="foto de perfil do usuário administrador" />
-                            <input type="file"></input>
-
+                            <div class="personalizando-input">
+                                <input type="file"></input>
+                            </div>
 
 
                             <form class="form">
@@ -56,4 +57,4 @@ class funcionarioperfil extends Component {
         );
     }
 }
-export default funcionarioperfil;
+export default comunidadeperfil;
