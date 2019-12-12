@@ -31,10 +31,22 @@
 
 }
 
-.registro {
+/* alterações da emily: add o display:flex e o align-items:flex-start */
+.h2-detalhes-do-evento {
     margin-top: 1em;
     margin-bottom: 1em;
+    display: flex;
+    align-items: flex-start;
 }
+/* alteraçõs da emily:criando a select de sala */
+.view{
+    width: 20vw;
+    height: 30vh;
+    display: flex;
+    justify-content: space-between;
+}
+/* fim das alterações da Emily */
+.sala-d
 
 .titulo-nome1 {
     color: grey;
@@ -91,6 +103,11 @@
     margin-top: 3em;
     font-size: 1em;
 }
+.titulo-nome11{
+    color: grey;
+    margin-top: 3em;
+    font-size: 1em;
+}
 
 .botao-um {
     margin-top: 1em;
@@ -142,13 +159,13 @@
 .toggle-button-cover {
     display: table-cell;
     position: relative;
-    /* width: 15em; */
+    width: 15em;
     height: 8em;
     box-sizing: border-box;
 }
 
 
-/* .button-cover:before
+.button-cover:before
 {
     counter-increment: button-counter;
     content: counter(button-counter);
@@ -159,7 +176,7 @@
     font-size: 12px;
     line-height: 1;
     padding: 5px;
-} */
+}
 
 .button-cover,
 .knobs,
@@ -228,7 +245,6 @@
     line-height: 1;
     padding: 9px 4px;
     background-color: #03A9F4;
-    border-radius: 50%;
     transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
 }
 
@@ -254,4 +270,20 @@
 
 .botoes-evento {
     margin-top: 1em;
+}
+
+/* alterações da Emily: add o botão de envie o seu evento */
+ .btn-yellow{
+    margin-top: 2em;
+     width: 15vw;
+}
+.alinhando-as-salas {
+    display: flex;
+}
+.lounge{
+    margin-left: 0.75em;
+}
+.btn-success {
+    width: 1vw;
+
 }

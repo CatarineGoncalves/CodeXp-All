@@ -3,37 +3,49 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+
+//import pages
 import Login from './pages/login/login.js';
 import crieseuevento from './pages/crieseuevento/crieseuevento.js';
-import AdministradorApadrinhar from './pages/admin/AdministradorApadrinhar'
-import AdministradorAprovar from './pages/admin/AdministradorAprovar'
-import AdministradorVisualizar from './pages/admin/AdministradorVizualizar'
+import Administrador from './pages/admin/admin.js'
+import EditeSeuPerfil from './pages/editeseuperfil/editeseuperfil.js'
+
+// IMPORT STYLE
+import './pages/admin/admin.css';
+
+//import MDB
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import 'bootstrap-css-only/css/bootstrap.min.css';
+import 'mdbreact/dist/css/mdb.css';
+
+
 
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
+// import editeseuperfil from './pages/editeseuperfil/editeseuperfil';
+
+
 
 const Rotas = (
     <Router>
         <div>
             <Switch>
                 <Route exact path="/home" component={App} />
-                <Route path='/login' component={Login}/>
-                <Route path='/criandoevento' component={crieseuevento}/>
-
-                <Route path='/administrador-apadrinhar' component={AdministradorApadrinhar}/>
-                <Route path='/administrador-aprovar' component={AdministradorAprovar}/>
-                <Route path='/administrador' component={AdministradorVisualizar}/>
+                <Route path='/login' component={Login} />
+                <Route path='/criandoevento' component={crieseuevento} />
+                <Route path='/administrador' component={Administrador} />
+                <Route path='/editeseuperfil' component={EditeSeuPerfil}/>
             </Switch>
         </div>
     </Router>
 )
-        
-        
-        
-        
-        
-        ReactDOM.render(Rotas, document.getElementById('root'));
-        
-        // If you want your app to work offline and load faster, you can change
-        // unregister() to register() below. Note this comes with some pitfalls.
-        // Learn more about service workers: https://bit.ly/CRA-PWA
-        serviceWorker.unregister();
+
+
+
+
+
+ReactDOM.render(Rotas, document.getElementById('root'));
+
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: https://bit.ly/CRA-PWA
+serviceWorker.unregister();
